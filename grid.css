@@ -1,0 +1,9 @@
+.wp-block-table.preformatted 
+tbody {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-auto-rows: auto;
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+  border-bottom: none;
+}
