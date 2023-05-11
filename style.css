@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+/*Denna nollställer padding och margin för allt på sidan*/
 
 html{
   scroll-behavior: smooth;
@@ -14,6 +15,7 @@ html{
   justify-content: center;
   align-items: center;
 }
+/*Hur jag stylar vart min logga ska ligga*/
 
 .logo img{
   width: 26%;
@@ -21,6 +23,8 @@ html{
   border-radius: 50%;
   margin: 5px;
 }
+/*Hur bilden på loggan ska se ut*/
+
 .navbar{
   display: flex;
   align-items: center;
@@ -29,34 +33,38 @@ html{
   top:0;
   cursor: pointer;
 }
+/*Hur menyn ska bete sig*/
 .nav-list{
   width: 70%;
-  /*background-color: rgb(0, 0, 0);*/
   display: flex;
   align-items: center;
 }
+/*Sakerna i menyn*/
 
 .nav-list li{
   list-style: none;
   padding: 26px 30px;
 }
+/*Stylen på listan i menyn*/
 
 .nav-list li a{
   text-decoration: none;
   color: white;
 }
+/*Texten i menyn*/
 
 .nav-list li a:hover{
   text-decoration: none;
   color: grey;
 }
+/*Vad som händer när man hovrar över menyn*/
 
 .rightNav{
-  /*background-color: rgb(200, 0, 255);*/
   width: 30%;
   text-align: right;
   padding: 0 23px;
 }
+/*Ena halvan av menyn*/
 
 #search{
   padding: 5px;
@@ -64,16 +72,19 @@ html{
   border: 2px solid grey;
   border-radius: 9px;
 }
+/*Searchbaren*/
 
 .background{
   background: rgba(0, 0, 0, 0) url(img/city.jpg);
   background-size: cover;
   background-blend-mode: darken;
 }
+/*Min bakgrund på headern*/
 
 .firstSection{
   height: 100vh;
 }
+/*Storleken på första sektionen*/
 
 .box-main{
   display: flex;
@@ -85,6 +96,7 @@ html{
   margin: auto;
   height: 80%;
 }
+/*Stylen inom första sektionen*/
 
 .firstHalf{
   width: 80%;
@@ -92,10 +104,12 @@ html{
   flex-direction: column;
   justify-content: center;
 }
+/*Stylen för första halvan av första sektionen*/
 
 .secondHalf{
   width: 20%;
 }
+/*Andra halvan*/
 .secondHalf img{
   width: 100%;
   border: 4px solid white;
@@ -103,14 +117,17 @@ html{
   display: block;
   margin: auto;
 }
+/*Bilden på andra halvan*/
 
 .text-big{
   font-size: 41px;
 }
+/*En delen av texten*/
 
 .text-small{
   font-size: 18px;
 }
+/*Andra delen av texten*/
 
 .burger{
   display: none;
@@ -119,12 +136,14 @@ html{
   right: 5%;
   top: 15px;
 }
+/*Dropdown menyn*/
 .line{
   width: 33px;
   background-color: white;
   height: 4px;
   margin: 5px 3px;
 }
+/*Stylen för de olika linjerna i min hamburgermneny*/
 
 h2 {
   font-size: 28px;
@@ -143,9 +162,9 @@ h2 {
   margin-right: 40%;
   border-bottom: 2px solid rgb(39, 39, 39);
 }
+/*Stylen för textformatet h2*/
 
 .wp-block-table.preformatted {
-  margin-left: calc(-1*((100% - 100%)/ 2));
   max-width: 100%;
   width: 100%;
   display: block;
@@ -157,10 +176,7 @@ h2 {
   color: rgb(78, 78, 78);
   background-color: rgb(221, 221, 221);
 }
-
-figure {
-  margin: 0;
-}
+/*Stylen för de olika beskrivningarna av motorcyklarna*/
 
 figure {
   display: block;
@@ -168,6 +184,7 @@ figure {
   margin-block-end: 1em;
   margin-inline-start: 40px;
   margin-inline-end: 40px;
+  margin: 0;
 }
 
 tr {
@@ -177,11 +194,13 @@ tr {
   border-top: 1px solid #eee;
   margin-left: 0%;
 }
+/*Stylen för de olika delarna i beskrivningen av motorcykel*/
 
 .wp-block-table.preformatted table {
   margin-bottom: 0;
   word-break: break-word;
 }
+/*Style inuti wp-block*/
 
 table {
   border-collapse: collapse;
@@ -189,9 +208,17 @@ table {
   margin-bottom: 40px;
   width: 100%;
 }
+/*Style för hur datan ska ligga*/
 
 .section2 img{
-  width: 165%;
+  width: 100%;
+}
+/*Bildstorlek i andra sektionen*/
+
+.noscript{
+  color: aqua;
+  z-index: 12;
+  background-color: white;
 }
 
 @media only screen and (max-width: 1140px){
@@ -233,3 +260,4 @@ table {
     font-size: 16px;
   }
 }
+/*Style för vad som händer med innnehållet när sidan underskrider en bredd på 1140px*/
