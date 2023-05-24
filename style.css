@@ -75,7 +75,7 @@ html{
 /*Searchbaren*/
 
 .background{
-  background: rgba(0, 0, 0, 0) url(img/city.jpg);
+  background: rgba(0, 0, 0, 0) url(img/city.webp);
   background-size: cover;
   background-blend-mode: darken;
 }
